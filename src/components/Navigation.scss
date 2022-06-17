@@ -1,0 +1,20 @@
+.navigation {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.75rem;
+
+  ul {
+    list-style: none;
+    display: flex;
+    column-gap: 1rem;
+
+    li.item {
+      button {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
