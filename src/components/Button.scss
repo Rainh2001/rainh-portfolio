@@ -1,3 +1,42 @@
 .button {
+  z-index: 1;
+  position: relative;
+  background-color: var(--color-primary-3);
+  border-radius: var(--border-radius-default);
+  border: 1px solid var(--color-secondary-1);
+  padding: .8rem 2.25rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0, .25);
+  transition: all .2s;
+  cursor: pointer;
+
+  & ~ .hidden-bg {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius-default);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .25);
+    background-image: linear-gradient(to bottom right, rgba(112,24,255,1) 20%, rgba(255,135,68,1) 65%, rgba(186,251,255,1) 100%);
+    transition: all .2s;
+  }
+
+  &:hover {
+    // transform: translate(.3rem, -.25rem);
+    transform: translate(.6rem, -.5rem);
+
+    & ~ .hidden-bg {
+      // transform: translate(-.3rem, .25rem);
+    }
+  }
+
+  &:active {
+    transform: translate(.3rem, -.25rem);
+  }
   
+  .text {
+    font-size: 1.75rem;
+  }
+
 }

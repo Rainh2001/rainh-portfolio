@@ -11,15 +11,15 @@ const Landing = () => {
       <ColorStripes />
       <Navigation />
       <div className="portfolio-name">
-        <span className="text">Rain Holloway</span>
+        <h1 className="text">Rain Holloway</h1>
       </div>
       <div className="call-to-action">
-        <p className="catch-phrase">Software is my passion.</p>
-        <p className="brief-bio">
+        <h2 className="catch-phrase">Software is my passion.</h2>
+        <h3 className="brief-bio">
           I'm an undergraduate computer science student in pursuit of solving
           real world problems through self-education and employment
           opportunities.
-        </p>
+        </h3>
         <Button>View my work</Button>
       </div>
       <WorkAvailability />

@@ -1,18 +1,28 @@
-.color-srtipes {
+.color-stripes {
   position: absolute;
+  display: flex;
+  flex-direction: row;
+  right: 20vw;
 
   .stripe {
-    &--1 {
+    width: 7.5rem;
+    height: 120vh;
+    margin-left: -5.5rem;
+    z-index: -1;
+    box-shadow: 0 .5rem .75rem rgba(0,0,0, .5);
+    transform: skewX(25deg);
 
+    &--1 {
+      background-color: var(--color-primary-2);
     }
     &--2 {
-      
+      background-color: var(--color-primary-1);
     }
     &--3 {
-      
+      background-color: var(--color-secondary-1);
     }
     &--4 {
-      
+      background-color: var(--color-tertiary-1);
     }
   }
 }

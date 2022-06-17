@@ -12,6 +12,7 @@
 
 input, button {
   font-size: 1rem;
+  color: currentColor;
 }
 
 :root {
@@ -22,8 +23,13 @@ input, button {
   --color-tertiary-1: #FF8744;
 
   --text-white: #fff;
-  --text-dimmed: #ccc;
+  --text-dimmed: #ddd;
+  --text-dark: var(--color-primary-3);
 
   --color-success: #3EE13B;
   --color-error: #FF0000;
+
+  --border-radius-default: .8rem;
+
+  --text-shadow-default: 0 0 .5rem rgba(0,0,0, .6);
 }

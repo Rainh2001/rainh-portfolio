@@ -6,9 +6,12 @@ interface ButtonProps {
 
 const Button = ({ children }: ButtonProps) => {
   return (
-    <button className="button">
-      <span className="text">{children}</span>
-    </button>
+    <div className="wrapper" style={{ position: "relative" }}>
+      <button className="button">
+        <span className="text">{children}</span>
+      </button>
+      <div className="hidden-bg"></div>
+    </div>
   );
 };
 
